@@ -61,45 +61,6 @@ int Ai::minimax(string arrCopy[3][3], int depth, bool isMaximizing) {
     string result = checkIfEndState(arrCopy);
     //std::cout << "kiirjuk a resultbol jovo erteket az if elõtt vayunk : " << result << std::endl;
     
-
-
-    //if (computerHere == "O") {
-    //    if (depth >= 0 && depth < 2 && result != "false") {
-
-    //        return scores.at(result);
-    //    }
-    //    else if (depth >= 2 && depth < 3 && result != "false") {
-
-    //        return 1.1 * scores.at(result);
-    //    }
-    //    else if (depth >= 3 && depth < 4 && result != "false") {
-
-    //        return 1.2 * scores.at(result);
-    //    }
-    //    else if (depth >= 4 && result != "false") {
-
-    //        return 1.3 * scores.at(result);
-    //    }
-    //}
-
-    //if (computerHere == "X") {
-    //    if (depth >= 0 && depth < 2 && result != "false") {
-
-    //        return scoresX.at(result);
-    //    }
-    //    else if (depth >= 2 && depth < 3 && result != "false") {
-
-    //        return 1.1 * scoresX.at(result);
-    //    }
-    //    else if (depth >= 3 && depth < 4 && result != "false") {
-
-    //        return 1.2 * scoresX.at(result);
-    //    }
-    //    else if (depth >= 4 && result != "false") {
-
-    //        return 1.3 * scoresX.at(result);
-    //    }
-    //}
     if(result != "false" && computerHere == "O") {
 
         return scores.at(result);
